@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Profile - PairFect</title>
+    <link rel="stylesheet" href="yapp.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">💖 PairFect</div>
+        <nav>
+            <a href="yapp.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html" class="btn-signup">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="profile-form">
+        <h2>Create Your Profile</h2>
+        <form action="#" method="POST">
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required />
+
+            <label>Gender:</label>
+            <select name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>Age:</label>
+            <input type="number" name="age" min="18" required />
+
+            <label>Email:</label>
+            <input type="email" name="email" required />
+
+            <label>Contact Number:</label>
+            <input type="tel" name="contact" pattern="[0-9]{10}" required />
+
+            <button type="submit" class="btn primary">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PairFect. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
